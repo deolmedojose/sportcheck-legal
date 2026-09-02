@@ -24,7 +24,7 @@
 <body>
 
 <h1>Política de privacidad de SportCheck</h1>
-<p class="fecha">Última actualización: 4 de agosto de 2026</p>
+<p class="fecha">Última actualización: 2 de septiembre de 2026</p>
 
 <p>
   SportCheck es una aplicación móvil de uso interno para clubes deportivos,
@@ -48,6 +48,7 @@
   <li>Identificador de inicio de sesión de Google o de Apple (Sign in with Google / Sign in with Apple), usado únicamente para autenticarte. SportCheck no accede a tu contraseña ni a otros datos de tu cuenta de Google/Apple.</li>
   <li>Rol dentro del club (entrenador o administrador) y club al que perteneces.</li>
   <li>Token de notificaciones push del dispositivo (si aceptas recibir notificaciones), usado exclusivamente para enviarte avisos del club.</li>
+  <li>Si eres administrador de club: los mensajes que envíes al desarrollador a través del chat de soporte o del formulario de sugerencias dentro de la app.</li>
 </ul>
 
 <h3>2.2. Datos de los jugadores (introducidos por el entrenador)</h3>
@@ -60,7 +61,7 @@
 <ul>
   <li>Nombre, dorsal y posición.</li>
   <li>Fotografía (opcional).</li>
-  <li>Asistencia a entrenamientos y partidos, resultados y estadísticas (goles/puntos según el deporte).</li>
+  <li>Asistencia a entrenamientos y partidos, resultados y estadísticas del partido (goles o puntos, tarjetas, cambios y minutos jugados, según el deporte).</li>
   <li>Incidencias registradas por el entrenador (lesiones, sanciones, comportamiento, notas libres).</li>
 </ul>
 <p>
@@ -76,6 +77,7 @@
   <li>Gestionar equipos, jugadores, sesiones de entrenamiento y partidos.</li>
   <li>Generar informes y estadísticas para el club y sus entrenadores.</li>
   <li>Enviar avisos del club mediante notificaciones push, si se ha dado permiso para ello.</li>
+  <li>Permitir a los administradores de club comunicarse con el desarrollador para soporte técnico o enviar sugerencias.</li>
 </ul>
 <p>SportCheck no utiliza estos datos con fines publicitarios ni los vende ni cede a terceros con fines comerciales.</p>
 
@@ -84,8 +86,11 @@
   Los datos se almacenan en Supabase (base de datos y almacenamiento de
   ficheros), un proveedor de infraestructura en la nube que actúa como
   encargado del tratamiento. El acceso a los datos está restringido: cada
-  entrenador solo puede ver los datos de sus propios equipos, y los
-  administradores del club solo pueden ver los datos de su club.
+  entrenador solo puede ver los datos de los equipos en los que participa
+  (los suyos propios o aquellos a los que ha sido añadido como parte del
+  cuerpo técnico), y los administradores del club pueden ver los datos de
+  todo su club. Durante un partido en directo, los datos del marcador se
+  sincronizan entre todos los entrenadores de ese equipo en tiempo real.
 </p>
 <p>
   El inicio de sesión con Google y con Apple se procesa a través de los
@@ -127,3 +132,4 @@
 
 </body>
 </html>
+
